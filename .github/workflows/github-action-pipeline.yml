@@ -1,0 +1,23 @@
+name: PipelineWorkflow
+
+on:
+   push:
+     branches:
+      - main
+   pull_request:
+     branches:  
+      - main
+
+jobs:
+   build:
+     name: Azure Pipeline
+     runs-on:  windows-latest
+     steps:
+     - name: Azure Pipeline Action
+       uses: Azure/Pipelines@v1
+       with:
+        azure-devops-project-url: https://dev.azure.com/MyTestOrg1000/ProjectDevOps
+        azure-pipeline-name: 'WebApps_Yml_Windows'
+        azure-devops-token: ${{secrets.AZURE_DEVOPS_TOKEN}}
+   
+    
