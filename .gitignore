@@ -1,0 +1,51 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+# Misc
+.cache
+.DS_Store
+
+
+# User's PROD/QA login'.  Don't allow edits to this file with personal credentials.
+/Assets/TestData/PROD/logins.json
+/Assets/Downloads/
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+*.[Cc]ache
+# but keep track of directories ending in .cache
+!*.[Cc]ache/
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+
+# Visual Studio files
+.vs/
+.vscode/
+.history/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in
+[Oo]bj
+[Ll]og/
+
+
+### Test run results ###
+[Tt]est[Rr]esults
+
+### MSTest test Results ###
+[Bb]uild[Ll]og.*
+
+[Aa]pp[Cc]onfig.json
+/Selenium_WebDriver_Core.sln
