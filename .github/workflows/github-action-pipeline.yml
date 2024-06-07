@@ -18,6 +18,6 @@ jobs:
        with:
         azure-devops-project-url: https://dev.azure.com/MyTestOrg1000/ProjectDevOps
         azure-pipeline-name: 'WebApps_Yml_Windows'
-        azure-devops-token: ${{secrets.AZURE_DEVOPS_TOKEN_100}}
+        azure-devops-token: ${{secrets.AZURE_DEVOPS_TOKEN}}
    
     
